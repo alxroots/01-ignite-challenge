@@ -20,8 +20,6 @@ export function TaskList() {
     if (newTaskTitle !== '') {
       setTasks([...tasks, {id: Math.floor(Math.random()*100), title: newTaskTitle, isComplete: false}])
     }
-    
-
   }
 
   function handleToggleTaskCompletion(id: number) {
